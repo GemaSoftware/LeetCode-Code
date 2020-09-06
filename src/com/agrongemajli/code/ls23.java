@@ -37,5 +37,5 @@ class Solution23 {
         return head.next;
     }
 
-    }
 }
+
