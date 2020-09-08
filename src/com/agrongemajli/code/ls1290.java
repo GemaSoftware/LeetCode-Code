@@ -18,10 +18,10 @@ class Solution1290 {
     public int getDecimalValue(ListNode head) {
         StringBuilder holder = new StringBuilder();
         while(head.next != null){
-            holder.append(String.valueOf(head.val));
+            holder.append(head.val);
             head = head.next;
         }
-        holder.append(String.valueOf(head.val));
+        holder.append(head.val);
 
         return Integer.parseInt(holder.toString(), 2);
     }
